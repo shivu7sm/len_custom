@@ -5,4 +5,8 @@ core: 8.x
 package: Lenovo
 project: 'Lenovo'
 dependencies:
-
+  - content_translation
+  - node
+  - rest
+  - serialization
+  - paraghraph
