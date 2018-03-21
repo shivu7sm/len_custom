@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: menu_item_type_link
+label: 'Menu Item Type - Link'
+icon_uuid: null
+description: 'This is a menu type of item - Link'
+behavior_plugins: {  }

@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.rich_text_component.field_content
+    - field.field.paragraph.rich_text_component.field_css
+    - field.field.paragraph.rich_text_component.field_js
+    - paragraphs.paragraphs_type.rich_text_component
+  module:
+    - file
+    - text
+id: paragraph.rich_text_component.default
+targetEntityType: paragraph
+bundle: rich_text_component
+mode: default
+content:
+  field_content:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_css:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_js:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden: {  }

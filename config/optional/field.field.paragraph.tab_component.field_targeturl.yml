@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_targeturl
+    - paragraphs.paragraphs_type.tab_component
+  module:
+    - text
+id: paragraph.tab_component.field_targeturl
+field_name: field_targeturl
+entity_type: paragraph
+bundle: tab_component
+label: TargetURL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

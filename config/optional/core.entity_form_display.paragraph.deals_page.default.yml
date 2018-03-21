@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.deals_page.field_container
+    - field.field.paragraph.deals_page.field_deals_head_container
+    - field.field.paragraph.deals_page.field_deals_main_container
+    - paragraphs.paragraphs_type.deals_page
+  module:
+    - inline_entity_form
+id: paragraph.deals_page.default
+targetEntityType: paragraph
+bundle: deals_page
+mode: default
+content:
+  field_deals_head_container:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_deals_main_container:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  field_container: true
+  status: true
+  uid: true

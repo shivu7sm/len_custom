@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_reference.field_ac
+    - field.field.paragraph.product_reference.field_acc
+    - field.field.paragraph.product_reference.field_code
+    - paragraphs.paragraphs_type.product_reference
+  module:
+    - paragraphs
+    - text
+id: paragraph.product_reference.default
+targetEntityType: paragraph
+bundle: product_reference
+mode: default
+content:
+  field_ac:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_acc:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_code:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

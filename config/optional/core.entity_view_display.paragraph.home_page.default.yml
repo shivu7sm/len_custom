@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page.field_espot_container
+    - field.field.paragraph.home_page.field_hero_container
+    - field.field.paragraph.home_page.field_hero_container_2
+    - paragraphs.paragraphs_type.home_page
+id: paragraph.home_page.default
+targetEntityType: paragraph
+bundle: home_page
+mode: default
+content:
+  field_espot_container:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_hero_container:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_hero_container_2:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

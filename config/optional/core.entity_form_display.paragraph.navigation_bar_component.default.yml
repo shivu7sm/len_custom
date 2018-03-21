@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.navigation_bar_component.field_name
+    - field.field.paragraph.navigation_bar_component.field_tabs
+    - paragraphs.paragraphs_type.navigation_bar_component
+  module:
+    - paragraphs
+id: paragraph.navigation_bar_component.default
+targetEntityType: paragraph
+bundle: navigation_bar_component
+mode: default
+content:
+  field_tabs:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_name: true
+  status: true
+  uid: true

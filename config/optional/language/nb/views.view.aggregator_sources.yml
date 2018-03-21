@@ -1,0 +1,36 @@
+label: 'Kilder for innsamler'
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+          tags:
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+            first: '« Første'
+            last: 'Siste »'
+      title: Kilder
+  feed_1:
+    display_title: Strøm
+    display_options:
+      fields:
+        title:
+          separator: ', '
+      title: OPML-nyhetsstrøm
+  page_1:
+    display_title: Side
+    display_options:
+      menu:
+        title: Kilder

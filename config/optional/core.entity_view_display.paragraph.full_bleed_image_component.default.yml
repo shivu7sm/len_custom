@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_bleed_image_component.field_hea
+    - field.field.paragraph.full_bleed_image_component.field_heading
+    - field.field.paragraph.full_bleed_image_component.field_images
+    - field.field.paragraph.full_bleed_image_component.field_links
+    - field.field.paragraph.full_bleed_image_component.field_mobile_image
+    - field.field.paragraph.full_bleed_image_component.field_name
+    - paragraphs.paragraphs_type.full_bleed_image_component
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.full_bleed_image_component.default
+targetEntityType: paragraph
+bundle: full_bleed_image_component
+mode: default
+content:
+  field_hea:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_heading:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_images:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_links:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_mobile_image:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_name:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

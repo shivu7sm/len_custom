@@ -1,0 +1,3 @@
+len_custom:
+  content_publisher_update_url: "http://"
+  content_publisher_delete_url: "http://contentpulisher.lenovo.com"

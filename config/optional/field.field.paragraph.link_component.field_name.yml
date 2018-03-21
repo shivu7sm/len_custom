@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.link_component
+  module:
+    - text
+id: paragraph.link_component.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: link_component
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

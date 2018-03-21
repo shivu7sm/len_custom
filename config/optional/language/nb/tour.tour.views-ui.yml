@@ -1,0 +1,32 @@
+label: 'Vis redigeringsside'
+tips:
+  views-main:
+    label: 'Rediger innstillinger for visning'
+    body: 'Vis eller rediger konfigurasjonen'
+  views-ui-displays:
+    label: 'Vis i visning'
+    body: 'En fremvisning er en måte å vise resultatene på, for eksempel som en side eller en blokk. En visning kan inneholde flere fremvisninger, som er oppført her. Den aktive fremvisningen er uthevet.'
+  views-ui-view-admin:
+    label: 'Vis administrasjon'
+    body: 'Utfør administrative oppgaver, inkludert å legge til beskrivelse og lage en kopi/klone. Klikk på rullegardin-knappen for å vise alternativene som er tilgjengelige.'
+  views-ui-format:
+    label: Visningsformat
+    body: 'Velg hvordan resultater skal vises. F.eks velg <em>Innhold</em> for å vise et komplett element, ved hjelp av de konfigurerte innstillingene for fremvisningen. Eller velg <em>Felt</em>, som lar deg vise enkelte felt for hvert resultat. Andre formater kan legges ved å installere moduler for å <em>utvide</em> basisfunksjonaliteten i Drupal.'
+  views-ui-fields:
+    label: Felt
+    body: 'Hvis denne visningen bruker felt, er de oppført her. Du kan klikke på et felt for å konfigurere det.'
+  views-ui-filter:
+    label: 'Filtrer visningen'
+    body: 'Legg til filtre for å begrense resultatene som vises. F.eks kan du vise kun innhold som er <em>publisert</em>, ved å legge til et filter for <em>Publisert</em> og velge <em>Ja</em>.'
+  views-ui-filter-operations:
+    label: Filterhandlinger
+    body: 'Legge til, flytte eller fjerne filtre.'
+  views-ui-sorts:
+    label: Sorteringskriterium
+    body: 'Kontroller rekkefølgen for resultatene som vises. Klikk på en aktiv sorteringsregel for å konfigurere den.'
+  views-ui-sorts-operations:
+    label: Sorteringshandlinger
+    body: 'Legge til, flytte eller fjerne sorteringsregler.'
+  views-ui-preview:
+    label: Forhåndsvisning
+    body: 'Se forhåndsvisning av resultatet for visningen.'

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: full_bleed_image_component
+label: 'Full Bleed Image Component'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_specs
+field_name: field_specs
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1000001:LOIS_SCA_CPU'
+      label: CPU
+    -
+      value: '1000001:LOIS_SCA_OPSYS'
+      label: 'OPERATING SYSTEM'
+    -
+      value: '1000001:LOIS_SCA_DPY'
+      label: 'DISPLAY TYPE'
+    -
+      value: '1000001:LOIS_SCA_MEM'
+      label: MEMORY
+    -
+      value: '1000001:LOIS_SCA_HDD|HARD DRIVE'
+      label: ''
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

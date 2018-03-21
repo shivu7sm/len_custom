@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blank_page.field_full_page_container
+    - paragraphs.paragraphs_type.blank_page
+id: paragraph.blank_page.default
+targetEntityType: paragraph
+bundle: blank_page
+mode: default
+content:
+  field_full_page_container:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

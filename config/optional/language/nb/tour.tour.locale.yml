@@ -1,0 +1,26 @@
+label: Oversettelse
+tips:
+  locale-overview:
+    label: 'Oversett brukergrensesnittet'
+    body: 'Denne siden lar deg oversette brukergrensesnittet og endre eksisterende oversettelser. Hvis du først har installert nettstedet ditt på engelsk, må du først legge til et annet språk på <a href="[site:url]admin/config/regional/language">språksiden</a> for å kunne bruke denne siden.'
+  locale-language:
+    label: 'Språk for oversettelse'
+    body: 'Velg språket du vil oversette.'
+  locale-search:
+    label: Søk
+    body: 'Skriv inn bestemt ord eller en setning du vil oversette. Du kan også skrive inn kun en del av et ord.'
+  locale-filter:
+    label: 'Filtrer søket'
+    body: 'Du kan søke etter strenger som ikke er oversatte hvis du ønsker å oversette noe som ikke er oversatt ennå. Hvis du vil endre en eksisterende oversettelse, kan det være lurt å søke etter bare oversatte strenger.'
+  locale-submit:
+    label: 'Bruk søkekriteriene'
+    body: 'For å bruke søkekriteriene, klikker du på <em>filter</em>-knappen.'
+  locale-translate:
+    label: Oversett
+    body: 'Du kan skrive din egen oversettelse i tekstfeltene i høyre kolonne. Prøv å finne ut i hvilken sammenheng teksten vil bli brukt for å oversette det på riktig måte.'
+  locale-validate:
+    label: 'Valider oversettelsen'
+    body: 'Når du har fullført oversettelsen, klikker du på knappen <em>Lagre oversettelser</em>. Du må alltid lagre dine oversettelser før du skifter side eller gjøre et nytt søk.'
+  locale-continue:
+    label: 'Fortsetter på'
+    body: 'Oversettelsene du har opprettet her blir brukt i brukergrensesnittet på nettstedet ditt. Hvis du vil bruke dem på et annet nettsted eller endre dem i et eksternt oversettelsesprogram, kan du <a href="[site:url]admin/config/regional/translate/export">eksportere dem</a> til en.po-fil og <a href="[site:url]admin/config/regional/translate/import">importere dem</a> senere.'

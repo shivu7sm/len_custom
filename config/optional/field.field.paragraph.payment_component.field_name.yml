@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.payment_component
+  module:
+    - text
+id: paragraph.payment_component.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: payment_component
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

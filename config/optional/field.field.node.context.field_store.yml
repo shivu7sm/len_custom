@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_store
+    - node.type.context
+id: node.context.field_store
+field_name: field_store
+entity_type: node
+bundle: context
+label: Store
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

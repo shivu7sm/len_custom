@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: menu_item_component
+label: 'Menu Item'
+icon_uuid: null
+description: 'This is a menu item'
+behavior_plugins: {  }

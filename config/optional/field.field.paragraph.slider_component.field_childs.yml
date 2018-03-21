@@ -1,0 +1,81 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_childs
+    - paragraphs.paragraphs_type.espot_component
+    - paragraphs.paragraphs_type.slider_component
+  module:
+    - entity_reference_revisions
+id: paragraph.slider_component.field_childs
+field_name: field_childs
+entity_type: paragraph
+bundle: slider_component
+label: Childs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      espot_component: espot_component
+    target_bundles_drag_drop:
+      slider_component:
+        weight: 19
+        enabled: false
+      banner_component:
+        weight: 20
+        enabled: false
+      blank_page:
+        weight: 21
+        enabled: false
+      carousel_component:
+        weight: 22
+        enabled: false
+      deals_page:
+        weight: 23
+        enabled: false
+      espot_component:
+        enabled: true
+        weight: 24
+      full_bleed_image_component:
+        weight: 25
+        enabled: false
+      home_page:
+        weight: 26
+        enabled: false
+      image_component:
+        weight: 27
+        enabled: false
+      link_component:
+        weight: 28
+        enabled: false
+      navigation_bar_component:
+        weight: 29
+        enabled: false
+      payment_component:
+        weight: 30
+        enabled: false
+      payment_options_component:
+        weight: 31
+        enabled: false
+      product_reference_component:
+        weight: 32
+        enabled: false
+      product_summary_component:
+        weight: 33
+        enabled: false
+      product_summary_specs_component:
+        weight: 34
+        enabled: false
+      rich_text_component:
+        weight: 35
+        enabled: false
+      tab_component:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

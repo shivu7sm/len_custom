@@ -1,0 +1,2 @@
+content_publisher_update_url: 'http://blnemo028.lenovo.com:9304/publish/drupal/node/'
+content_publisher_delete_url: 'http://blnemo028.lenovo.com:9304/publish/drupal/delete/node/'

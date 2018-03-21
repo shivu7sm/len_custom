@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.common_template.field_page_container
+    - paragraphs.paragraphs_type.common_template
+id: paragraph.common_template.default
+targetEntityType: paragraph
+bundle: common_template
+mode: default
+content:
+  field_page_container:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: home_page
+label: 'Home Page'
+icon_uuid: null
+description: 'Contains fields specific to Home Page'
+behavior_plugins: {  }

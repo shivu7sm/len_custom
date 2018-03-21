@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_produc
+    - paragraphs.paragraphs_type.menu_item_type_product
+id: paragraph.menu_item_type_product.field_produc
+field_name: field_produc
+entity_type: paragraph
+bundle: menu_item_type_product
+label: 'Product Code'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

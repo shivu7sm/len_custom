@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accessory_code
+    - paragraphs.paragraphs_type.accessories
+id: paragraph.accessories.field_accessory_code
+field_name: field_accessory_code
+entity_type: paragraph
+bundle: accessories
+label: 'Accessory Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

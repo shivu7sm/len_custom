@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: blank_page
+label: 'Blank Page'
+icon_uuid: null
+description: 'This is a blank page'
+behavior_plugins: {  }

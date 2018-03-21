@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cms_message
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.cms_message
+target_entity_type_id: node
+target_bundle: cms_message
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: product_reference_component
+label: 'Product Reference Component'
+icon_uuid: null
+description: 'Product Reference Component'
+behavior_plugins: {  }

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: carousel_component
+label: 'Carousel Component'
+icon_uuid: null
+description: 'Carousel Component'
+behavior_plugins: {  }

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: banner_component
+label: 'Banner Component'
+icon_uuid: null
+description: 'Banner Component'
+behavior_plugins: {  }

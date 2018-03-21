@@ -1,0 +1,28 @@
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        title:
+          label: Tittel
+          separator: ', '
+        timestamp:
+          label: 'Lås Dato/Tid'
+  page_1:
+    display_title: Side

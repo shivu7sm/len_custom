@@ -1,0 +1,76 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_products
+    - paragraphs.paragraphs_type.product_summary_specs_component
+  module:
+    - entity_reference_revisions
+id: paragraph.product_summary_specs_component.field_products
+field_name: field_products
+entity_type: paragraph
+bundle: product_summary_specs_component
+label: Products
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: {  }
+    target_bundles_drag_drop:
+      product_summary_specs_component:
+        weight: 18
+        enabled: false
+      banner_component:
+        weight: 19
+        enabled: false
+      blank_page:
+        weight: 20
+        enabled: false
+      carousel_component:
+        weight: 21
+        enabled: false
+      deals_page:
+        weight: 22
+        enabled: false
+      espot_component:
+        weight: 23
+        enabled: false
+      full_bleed_image_component:
+        weight: 24
+        enabled: false
+      home_page:
+        weight: 25
+        enabled: false
+      image_component:
+        weight: 26
+        enabled: false
+      link_component:
+        weight: 27
+        enabled: false
+      navigation_bar_component:
+        weight: 28
+        enabled: false
+      payment_component:
+        weight: 29
+        enabled: false
+      payment_options_component:
+        weight: 30
+        enabled: false
+      product_reference_component:
+        enabled: true
+        weight: 31
+      product_summary_component:
+        weight: 32
+        enabled: false
+      rich_text_component:
+        weight: 33
+        enabled: false
+      tab_component:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

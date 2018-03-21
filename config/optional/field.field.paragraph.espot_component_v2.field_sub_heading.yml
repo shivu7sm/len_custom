@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_heading
+    - paragraphs.paragraphs_type.espot_component_v2
+  module:
+    - text
+id: paragraph.espot_component_v2.field_sub_heading
+field_name: field_sub_heading
+entity_type: paragraph
+bundle: espot_component_v2
+label: 'Sub Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_deals_halo_quote_source
+    - paragraphs.paragraphs_type.product_summary_component_v2
+id: paragraph.product_summary_component_v2.field_deals_halo_quote_source
+field_name: field_deals_halo_quote_source
+entity_type: paragraph
+bundle: product_summary_component_v2
+label: 'Quote Source'
+description: 'Enter the source or author for the quote.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

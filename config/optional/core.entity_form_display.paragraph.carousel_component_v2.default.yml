@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_component_v2.field_carousel_transition_type
+    - field.field.paragraph.carousel_component_v2.field_items
+    - paragraphs.paragraphs_type.carousel_component_v2
+  module:
+    - inline_entity_form
+id: paragraph.carousel_component_v2.default
+targetEntityType: paragraph
+bundle: carousel_component_v2
+mode: default
+content:
+  field_carousel_transition_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_items:
+    weight: 1
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

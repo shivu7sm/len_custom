@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.espot_component.field_alt_text
+    - field.field.paragraph.espot_component.field_anchor_link
+    - field.field.paragraph.espot_component.field_heading
+    - field.field.paragraph.espot_component.field_source
+    - field.field.paragraph.espot_component.field_sub_heading
+    - field.field.paragraph.espot_component.field_target
+    - paragraphs.paragraphs_type.espot_component
+  module:
+    - file
+    - options
+    - text
+id: paragraph.espot_component.default
+targetEntityType: paragraph
+bundle: espot_component
+mode: default
+content:
+  field_alt_text:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_anchor_link:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_heading:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_source:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_sub_heading:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_target:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

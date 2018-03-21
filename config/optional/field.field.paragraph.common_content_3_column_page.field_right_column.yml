@@ -1,0 +1,127 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_right_column
+    - paragraphs.paragraphs_type.common_content_3_column_page
+  module:
+    - entity_reference_revisions
+id: paragraph.common_content_3_column_page.field_right_column
+field_name: field_right_column
+entity_type: paragraph
+bundle: common_content_3_column_page
+label: 'Right Column'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      common_content_3_column_page:
+        weight: 35
+        enabled: false
+      accessories:
+        weight: 36
+        enabled: false
+      banner_component:
+        weight: 37
+        enabled: false
+      blank_page:
+        weight: 38
+        enabled: false
+      carousel_component:
+        weight: 39
+        enabled: false
+      carousel_component_v2:
+        weight: 40
+        enabled: false
+      common_content_2_column_page:
+        weight: 41
+        enabled: false
+      common_template:
+        weight: 42
+        enabled: false
+      deals_page:
+        weight: 43
+        enabled: false
+      espot_component:
+        weight: 44
+        enabled: false
+      espot_component_v2:
+        weight: 45
+        enabled: false
+      full_bleed_image_component:
+        weight: 46
+        enabled: false
+      full_bleed_image_component_v2:
+        weight: 47
+        enabled: false
+      home_page:
+        weight: 48
+        enabled: false
+      image_component:
+        weight: 49
+        enabled: false
+      link_component:
+        weight: 50
+        enabled: false
+      menu_component:
+        weight: 51
+        enabled: false
+      menu_item_component:
+        weight: 52
+        enabled: false
+      menu_item_type_category:
+        weight: 53
+        enabled: false
+      menu_item_type_link:
+        weight: 54
+        enabled: false
+      menu_item_type_product:
+        weight: 55
+        enabled: false
+      navigation_bar_component:
+        weight: 56
+        enabled: false
+      payment_component:
+        weight: 57
+        enabled: false
+      payment_options_component:
+        weight: 58
+        enabled: false
+      product_reference:
+        weight: 59
+        enabled: false
+      product_reference_component:
+        weight: 60
+        enabled: false
+      product_summary_component:
+        weight: 61
+        enabled: false
+      product_summary_component_v2:
+        weight: 62
+        enabled: false
+      product_summary_specs_component:
+        weight: 63
+        enabled: false
+      rich_text_component:
+        weight: 64
+        enabled: false
+      rule:
+        weight: 65
+        enabled: false
+      slider_component:
+        weight: 66
+        enabled: false
+      slider_component_v2:
+        weight: 67
+        enabled: false
+      tab_component:
+        weight: 68
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.full_bleed_image_component
+  module:
+    - text
+id: paragraph.full_bleed_image_component.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: full_bleed_image_component
+label: 'Header Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_target
+    - paragraphs.paragraphs_type.espot_component
+  module:
+    - options
+id: paragraph.espot_component.field_target
+field_name: field_target
+entity_type: paragraph
+bundle: espot_component
+label: Target
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

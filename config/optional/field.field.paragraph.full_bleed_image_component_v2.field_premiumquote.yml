@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_premiumquote
+    - paragraphs.paragraphs_type.full_bleed_image_component_v2
+  module:
+    - link
+id: paragraph.full_bleed_image_component_v2.field_premiumquote
+field_name: field_premiumquote
+entity_type: paragraph
+bundle: full_bleed_image_component_v2
+label: 'Premium Quote'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

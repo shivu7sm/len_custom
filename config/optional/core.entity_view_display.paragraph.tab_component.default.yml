@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tab_component.field_addclass
+    - field.field.paragraph.tab_component.field_iconurl
+    - field.field.paragraph.tab_component.field_name
+    - field.field.paragraph.tab_component.field_targeturl
+    - paragraphs.paragraphs_type.tab_component
+  module:
+    - text
+id: paragraph.tab_component.default
+targetEntityType: paragraph
+bundle: tab_component
+mode: default
+content:
+  field_addclass:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_iconurl:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_name:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_targeturl:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

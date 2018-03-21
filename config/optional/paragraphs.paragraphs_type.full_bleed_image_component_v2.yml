@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: full_bleed_image_component_v2
+label: 'Content Blade: Full Width Image BG'
+icon_uuid: null
+description: 'This is version 2 of Full Bleed Image Component - by Azhar for testing'
+behavior_plugins: {  }

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: espot_component
+label: 'Espot Component'
+icon_uuid: null
+description: 'This is an Espot Component'
+behavior_plugins: {  }

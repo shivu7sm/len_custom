@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_iconurl
+    - paragraphs.paragraphs_type.tab_component
+  module:
+    - text
+id: paragraph.tab_component.field_iconurl
+field_name: field_iconurl
+entity_type: paragraph
+bundle: tab_component
+label: IconURL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

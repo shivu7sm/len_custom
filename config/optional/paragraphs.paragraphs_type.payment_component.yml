@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: payment_component
+label: 'Payment Component'
+icon_uuid: null
+description: 'Payment Component'
+behavior_plugins: {  }

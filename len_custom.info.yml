@@ -1,0 +1,8 @@
+name: Lenovo Custom Code
+type: module
+description: 'All Lenovo Custom code goes here'
+core: 8.x
+package: Lenovo
+project: 'Lenovo'
+dependencies:
+

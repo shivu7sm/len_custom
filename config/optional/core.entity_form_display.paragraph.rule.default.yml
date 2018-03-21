@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.rule.field_rule_title
+    - field.field.paragraph.rule.field_rule_type
+    - field.field.paragraph.rule.field_rule_value_key
+    - field.field.paragraph.rule.field_rule_value_match_expressio
+    - paragraphs.paragraphs_type.rule
+id: paragraph.rule.default
+targetEntityType: paragraph
+bundle: rule
+mode: default
+content:
+  field_rule_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_rule_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_rule_value_key:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_rule_value_match_expressio:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

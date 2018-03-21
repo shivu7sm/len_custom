@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+name: new_image_pipeline
+label: 'New image Pipeline'
+processors:
+  e34d5fce-f27a-4ebb-8144-d3942d4ccd1e:
+    uuid: e34d5fce-f27a-4ebb-8144-d3942d4ccd1e
+    id: tinypng
+    weight: 1
+    data:
+      api_key: i9UuNR_3zq-Z_jjE3xkKzdrDYd7h8YcB

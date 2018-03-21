@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: common_template
+label: 'Common Template'
+icon_uuid: null
+description: 'Common content page template with NO header and footer.'
+behavior_plugins: {  }

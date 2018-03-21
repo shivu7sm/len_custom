@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: espot_component_v2
+label: 'Espot Component V2'
+icon_uuid: null
+description: 'This is an Espot Component V2 created by Azhar for testing'
+behavior_plugins: {  }

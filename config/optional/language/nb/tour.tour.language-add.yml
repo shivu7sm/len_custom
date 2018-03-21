@@ -1,0 +1,11 @@
+label: 'Legge til språk'
+tips:
+  language-add-overview:
+    label: 'Legge til språk'
+    body: '<p> Denne siden lar deg legge til vanlige språk på nettstedet.</p> <p>Hvis språket du vil bruke ikke er tilgjengelig, kan du legge til et egendefinert språk.</p>'
+  language-add-choose:
+    label: 'Velg språk'
+    body: '<p>Velg et språk fra listen, eller velg «Egendefinert språk…» på slutten av listen.</p><p>Klikk på «Legg til språk»-knappen når du har valgt ønsket språk.</p><p>Når du legger et egendefinert språk, vil du se et tilleggs-skjema der du kan oppgi navn, kode og skriveretning for språket.</p>'
+  language-add-continue:
+    label: 'Fortsetter på'
+    body: "<p>Nå\_som du har oversikt over funksjonen «Legg til språk», kan du fortsette med å:<ul><li>Legge til et språk</li><li>Legge til et egendefinert språk</li><li><a href=\"[site:url]admin/config/regional/language\">Vise språkene som er konfigurert</a></li></ul></p>"

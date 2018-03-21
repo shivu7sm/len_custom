@@ -1,0 +1,4 @@
+view lenovo content:
+  title: 'View Lenovo Content'
+  description: 'Allow users to access lenovo custom pages'
+  restrict access: TRUE

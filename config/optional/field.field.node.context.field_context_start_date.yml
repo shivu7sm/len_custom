@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_context_start_date
+    - node.type.context
+  module:
+    - datetime
+id: node.context.field_context_start_date
+field_name: field_context_start_date
+entity_type: node
+bundle: context
+label: 'Start Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

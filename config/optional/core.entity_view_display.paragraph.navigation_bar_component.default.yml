@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.navigation_bar_component.field_name
+    - field.field.paragraph.navigation_bar_component.field_tabs
+    - paragraphs.paragraphs_type.navigation_bar_component
+  module:
+    - entity_reference_revisions
+id: paragraph.navigation_bar_component.default
+targetEntityType: paragraph
+bundle: navigation_bar_component
+mode: default
+content:
+  field_tabs:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_name: true

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: payment_options_component
+label: 'Payment Options Component'
+icon_uuid: null
+description: 'Payment Options Component'
+behavior_plugins: {  }

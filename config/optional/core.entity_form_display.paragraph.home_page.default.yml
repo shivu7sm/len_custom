@@ -1,0 +1,58 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page.field_espot_container
+    - field.field.paragraph.home_page.field_hero_container
+    - field.field.paragraph.home_page.field_hero_container_2
+    - paragraphs.paragraphs_type.home_page
+  module:
+    - inline_entity_form
+id: paragraph.home_page.default
+targetEntityType: paragraph
+bundle: home_page
+mode: default
+content:
+  field_espot_container:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_hero_container:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_hero_container_2:
+    weight: 2
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

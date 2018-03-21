@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_template_engine
+    - node.type.template
+  module:
+    - options
+id: node.template.field_template_engine
+field_name: field_template_engine
+entity_type: node
+bundle: template
+label: 'Template Engine'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: html
+default_value_callback: ''
+settings: {  }
+field_type: list_string

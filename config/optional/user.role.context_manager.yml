@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies: {  }
+id: context_manager
+label: 'Context Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access jsonapi resource list'
+  - 'administer languages'
+  - 'create context content'
+  - 'delete any context content'
+  - 'delete own context content'
+  - 'edit any context content'
+  - 'edit own context content'
+  - 'revert context revisions'
+  - 'view context revisions'

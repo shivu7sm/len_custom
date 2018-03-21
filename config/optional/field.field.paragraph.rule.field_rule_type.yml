@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_rule_type
+    - paragraphs.paragraphs_type.rule
+  module:
+    - options
+id: paragraph.rule.field_rule_type
+field_name: field_rule_type
+entity_type: paragraph
+bundle: rule
+label: 'Rule Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

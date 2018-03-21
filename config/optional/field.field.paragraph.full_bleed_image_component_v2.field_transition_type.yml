@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_transition_type
+    - paragraphs.paragraphs_type.full_bleed_image_component_v2
+  module:
+    - options
+id: paragraph.full_bleed_image_component_v2.field_transition_type
+field_name: field_transition_type
+entity_type: paragraph
+bundle: full_bleed_image_component_v2
+label: 'Transition Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

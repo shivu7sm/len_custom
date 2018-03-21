@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: link_component
+label: 'Link Component'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

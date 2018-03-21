@@ -1,0 +1,69 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_payments
+    - paragraphs.paragraphs_type.payment_component
+    - paragraphs.paragraphs_type.payment_options_component
+  module:
+    - entity_reference_revisions
+id: paragraph.payment_options_component.field_payments
+field_name: field_payments
+entity_type: paragraph
+bundle: payment_options_component
+label: Payments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      payment_component: payment_component
+    target_bundles_drag_drop:
+      payment_component:
+        enabled: true
+        weight: 15
+      banner_component:
+        weight: 16
+        enabled: false
+      blank_page:
+        weight: 17
+        enabled: false
+      carousel_component:
+        weight: 18
+        enabled: false
+      deals_page:
+        weight: 19
+        enabled: false
+      espot_component:
+        weight: 20
+        enabled: false
+      full_bleed_image_component:
+        weight: 21
+        enabled: false
+      home_page:
+        weight: 22
+        enabled: false
+      image_component:
+        weight: 23
+        enabled: false
+      link_component:
+        weight: 24
+        enabled: false
+      navigation_bar_component:
+        weight: 25
+        enabled: false
+      payment_options_component:
+        weight: 26
+        enabled: false
+      rich_text_component:
+        weight: 27
+        enabled: false
+      tab_component:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

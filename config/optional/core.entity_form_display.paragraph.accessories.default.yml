@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accessories.field_accessory_code
+    - paragraphs.paragraphs_type.accessories
+id: paragraph.accessories.default
+targetEntityType: paragraph
+bundle: accessories
+mode: default
+content:
+  field_accessory_code:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

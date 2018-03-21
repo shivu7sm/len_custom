@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: deals_page
+label: 'Deals Page'
+icon_uuid: null
+description: 'Contains fields specific to Deals Page'
+behavior_plugins: {  }

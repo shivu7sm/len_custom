@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_reference.field_ac
+    - field.field.paragraph.product_reference.field_acc
+    - field.field.paragraph.product_reference.field_code
+    - paragraphs.paragraphs_type.product_reference
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.product_reference.default
+targetEntityType: paragraph
+bundle: product_reference
+mode: default
+content:
+  field_ac:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_acc:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_code:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

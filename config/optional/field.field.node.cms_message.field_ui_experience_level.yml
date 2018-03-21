@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ui_experience_level
+    - node.type.cms_message
+  module:
+    - options
+id: node.cms_message.field_ui_experience_level
+field_name: field_ui_experience_level
+entity_type: node
+bundle: cms_message
+label: 'UI Experience Level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

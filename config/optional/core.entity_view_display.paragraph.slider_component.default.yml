@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider_component.field_childs
+    - field.field.paragraph.slider_component.field_name
+    - paragraphs.paragraphs_type.slider_component
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.slider_component.default
+targetEntityType: paragraph
+bundle: slider_component
+mode: default
+content:
+  field_childs:
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_name:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

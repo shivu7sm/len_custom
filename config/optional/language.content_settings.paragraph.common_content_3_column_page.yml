@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.common_content_3_column_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.common_content_3_column_page
+target_entity_type_id: paragraph
+target_bundle: common_content_3_column_page
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_desktop_image_location
+    - paragraphs.paragraphs_type.full_bleed_image_component_v2
+  module:
+    - options
+id: paragraph.full_bleed_image_component_v2.field_desktop_image_location
+field_name: field_desktop_image_location
+entity_type: paragraph
+bundle: full_bleed_image_component_v2
+label: 'Desktop Image Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

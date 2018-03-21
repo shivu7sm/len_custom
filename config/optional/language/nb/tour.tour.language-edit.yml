@@ -1,0 +1,17 @@
+label: 'Rediger språk'
+tips:
+  language-edit-overview:
+    label: 'Rediger språk'
+    body: '<p>Denne sidenlar deg redigere et språk på nettstedet ditt, inkludert egendefinerte språk.</p>'
+  language-edit-langcode:
+    label: Språkkode
+    body: '<p>Du kan ikke endre koden til et språk på nettstedet, siden det brukes av systemet til å holde styr på språket.</p>'
+  language-edit-label:
+    label: Språk
+    body: '<p>Språknavnet er brukt gjennomgående for nettstedet for alle brukere, og er skrevet på engelsk. Navn på innebygde språk kan oversettes med modulen brukergrensesnittoversettelse, og navnene på både innebygde og egendefinerte språk kan oversettes ved hjelp av modulen konfigurasjonsoversettelse.</p>'
+  language-edit-direction:
+    label: Språkretning
+    body: '<p>Velg om skriveretning for språket er «venstre til høyre» eller «høyre til venstre».</p><p>Merk at ikke alle visningsmaler støtter «høyre til venstre»-oppsett, så test visningsmalen hvis du bruker «høyre til venstre».</p>'
+  language-edit-continue:
+    label: 'Fortsetter på'
+    body: "<p>Nå\_som du har oversikt over funksjonen «Legg til språk», kan du fortsette med å:<ul><li>Redigere et språk</li><li><a href=\"[site:url]admin/config/regional/language\">Vise språkene som er konfigurert</a></li></ul></p>"

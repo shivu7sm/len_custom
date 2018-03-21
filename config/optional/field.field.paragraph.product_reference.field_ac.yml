@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ac
+    - paragraphs.paragraphs_type.product_reference
+  module:
+    - text
+id: paragraph.product_reference.field_ac
+field_name: field_ac
+entity_type: paragraph
+bundle: product_reference
+label: 'Accessories Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

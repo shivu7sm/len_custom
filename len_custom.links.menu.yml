@@ -1,0 +1,7 @@
+len_custom.lenovo_custom_config:
+  title: 'Lenovo Custom Module Settings'
+  route_name: len_custom.lenovo_custom_config
+  description: 'Manage content publisher rest endpoints'
+  parent: system.admin_config_development
+  weight: 99
+

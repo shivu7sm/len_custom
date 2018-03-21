@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.component
+id: node.component.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: component
+label: 'End Date'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1735747364
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

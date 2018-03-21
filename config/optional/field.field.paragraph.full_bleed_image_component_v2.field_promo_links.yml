@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_promo_links
+    - paragraphs.paragraphs_type.full_bleed_image_component_v2
+  module:
+    - link
+id: paragraph.full_bleed_image_component_v2.field_promo_links
+field_name: field_promo_links
+entity_type: paragraph
+bundle: full_bleed_image_component_v2
+label: 'Promo Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

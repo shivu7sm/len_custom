@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: rich_text_component
+label: 'Rich Text Component'
+icon_uuid: null
+description: 'This is a Rich Text component'
+behavior_plugins: {  }

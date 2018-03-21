@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_additional_comments
+    - paragraphs.paragraphs_type.banner_component
+id: paragraph.banner_component.field_additional_comments
+field_name: field_additional_comments
+entity_type: paragraph
+bundle: banner_component
+label: 'Additional Comments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

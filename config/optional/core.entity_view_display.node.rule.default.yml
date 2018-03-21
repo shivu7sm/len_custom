@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.rule.field_rule_binary
+    - field.field.node.rule.field_rule_match_type
+    - field.field.node.rule.field_rule_priority
+    - field.field.node.rule.field_rule_type
+    - field.field.node.rule.field_rule_value_key
+    - field.field.node.rule.field_rule_value_match
+    - node.type.rule
+  module:
+    - options
+    - user
+id: node.rule.default
+targetEntityType: node
+bundle: rule
+mode: default
+content:
+  field_rule_binary:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_rule_match_type:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_rule_priority:
+    weight: 106
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_rule_type:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_rule_value_key:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_rule_value_match:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tech_specs
+    - paragraphs.paragraphs_type.product_summary_component_v2
+id: paragraph.product_summary_component_v2.field_tech_specs
+field_name: field_tech_specs
+entity_type: paragraph
+bundle: product_summary_component_v2
+label: 'Tech Specs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

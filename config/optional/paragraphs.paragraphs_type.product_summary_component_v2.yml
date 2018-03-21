@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: product_summary_component_v2
+label: 'Product Summary Component v2'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

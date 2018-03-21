@@ -1,0 +1,26 @@
+lenovo_content.display_page:
+  path: '/len_custom/display_page/{node}/{delta}'
+  defaults:
+    _controller: '\Drupal\len_custom\Controller\PageViewController::displayRelations'
+    _title: 'Display Page'
+  requirements:
+    _permission: 'access content'
+
+example.form:
+  path: '/example-form'
+  defaults:
+    _title: 'Example form'
+    _form: '\Drupal\len_custom\Form\ExampleForm'
+  requirements:
+    _permission: 'access forms'
+
+len_custom.lenovo_custom_config:
+  path: '/admin/config/development/len_custom/lenovocustomconfig'
+  defaults:
+    _form: '\Drupal\len_custom\Form\LenovoCustomConfig'
+    _title: 'LenovoCustomConfig'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

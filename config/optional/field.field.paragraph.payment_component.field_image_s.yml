@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_s
+    - paragraphs.paragraphs_type.payment_component
+  module:
+    - text
+id: paragraph.payment_component.field_image_s
+field_name: field_image_s
+entity_type: paragraph
+bundle: payment_component
+label: 'Logo Source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

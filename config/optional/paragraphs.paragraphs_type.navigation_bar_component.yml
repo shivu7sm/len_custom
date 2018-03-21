@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: navigation_bar_component
+label: 'Navigation Bar Component'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: rule
+label: Rule
+icon_uuid: null
+description: 'A rule that can be applied to a Context for example to form user segments. Intended for personalization.'
+behavior_plugins: {  }

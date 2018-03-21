@@ -1,0 +1,12 @@
+lenovo-content:
+  version: 1.x
+  js:
+    js/lenovo.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+  css:
+    theme:
+      css/lenovo.css: {}

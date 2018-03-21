@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: image_component
+label: 'Image Component'
+icon_uuid: null
+description: 'Image Component'
+behavior_plugins: {  }

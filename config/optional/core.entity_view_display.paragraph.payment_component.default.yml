@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.payment_component.field_anchor_link
+    - field.field.paragraph.payment_component.field_description
+    - field.field.paragraph.payment_component.field_image_s
+    - field.field.paragraph.payment_component.field_name
+    - paragraphs.paragraphs_type.payment_component
+  module:
+    - text
+id: paragraph.payment_component.default
+targetEntityType: paragraph
+bundle: payment_component
+mode: default
+content:
+  field_anchor_link:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_description:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image_s:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_name:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

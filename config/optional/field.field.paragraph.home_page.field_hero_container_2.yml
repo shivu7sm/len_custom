@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_container_2
+    - node.type.container
+    - paragraphs.paragraphs_type.home_page
+id: paragraph.home_page.field_hero_container_2
+field_name: field_hero_container_2
+entity_type: paragraph
+bundle: home_page
+label: 'Hero container 2'
+description: 'Select a Banner component'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      container: container
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

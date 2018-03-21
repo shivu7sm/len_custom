@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_images
+    - paragraphs.paragraphs_type.full_bleed_image_component
+    - paragraphs.paragraphs_type.image_component
+  module:
+    - entity_reference_revisions
+id: paragraph.full_bleed_image_component.field_images
+field_name: field_images
+entity_type: paragraph
+bundle: full_bleed_image_component
+label: 'Desktop Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_component: image_component
+    target_bundles_drag_drop:
+      full_bleed_image_component:
+        weight: 10
+        enabled: false
+      link_component:
+        weight: 11
+        enabled: false
+      banner_component:
+        weight: 11
+        enabled: false
+      blank_page:
+        weight: 12
+        enabled: false
+      carousel_component:
+        weight: 13
+        enabled: false
+      deals_page:
+        weight: 14
+        enabled: false
+      espot_component:
+        weight: 15
+        enabled: false
+      home_page:
+        weight: 16
+        enabled: false
+      image_component:
+        enabled: true
+        weight: 17
+      rich_text_component:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

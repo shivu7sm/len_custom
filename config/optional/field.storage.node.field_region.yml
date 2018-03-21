@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_region
+field_name: field_region
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: anz
+      label: 'Australia & New Zealand'
+    -
+      value: na
+      label: 'North America'
+    -
+      value: apac
+      label: 'Asia Pacific'
+    -
+      value: emea
+      label: 'Europe Middle East'
+    -
+      value: las
+      label: 'Latin America (Do not use)'
+    -
+      value: latam
+      label: 'Latin America (Use this)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

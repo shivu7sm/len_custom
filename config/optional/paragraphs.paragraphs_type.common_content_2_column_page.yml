@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: common_content_2_column_page
+label: 'Common Content 2 Column Page'
+icon_uuid: null
+description: 'Common Content 2 Column Page Template'
+behavior_plugins: {  }

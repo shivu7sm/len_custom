@@ -1,0 +1,154 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\len_custom\ContentPublisher\RestCallTrigger;
+use Drupal\Core\Form\ConfigFormBaseTrait;
+use Drupal\Core\Form\ConfigFormBase;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Config\Config;
+/**
+ * Implements hook_form_alter().
+ */
+
+/**
+ * @param $form
+ * @param FormStateInterface $form_state
+ * @param $form_id
+ */
+function len_custom_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+    // Attach the IEF handlers only if the current form has an IEF widget.
+//kint($form);die();
+    switch ($form_id) {
+        case 'node_component_edit_form':
+            $form['actions']['submit']['#value'] = t('Save Component');
+
+            break;
+        case 'node_page_form':
+            $form['actions']['submit']['#value'] = t('Save Page');
+            break;
+        case 'node_page_edit_form':
+            /*$form['Staging'] = array(
+              '#type' => 'checkbox',
+              '#title' => 'Publish(Staging)',
+              '#weight' => 4,
+            );*/
+            break;
+    }
+
+}
+
+
+/**
+ * @param $existing
+ * @param $type
+ * @param $theme
+ * @param $path
+ * @return array
+ */
+function len_custom_theme($existing, $type, $theme, $path)
+{
+    return [
+        'len_custom_marquee' => [
+            'variables' => [
+                'content' => '',
+                'attributes' => array(),
+            ]
+        ]
+    ];
+}
+
+/*function len_custom_form_submit($form, FormStateInterface $form_state) {
+
+    dpm($form_state);
+  }*/
+
+//function len_custom_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+/**
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ */
+function len_custom_entity_update(Drupal\Core\Entity\EntityInterface $entity) {
+    $config = \Drupal::service('config.factory')->getEditable('len_custom.lenovocustomconfig');
+
+    if ($entity->getEntityTypeId() === 'node')
+    {
+        $node = $entity;
+        $contentType = $node->type->getString();
+        if($contentType === 'page')
+        {
+            $deployEnv = $node->field_publish_to->getString();
+            //$contentType = $node->type->getString();
+            //kint($node->type->getString());die();
+            //if($contentType === 'page'){
+
+            /** @var TYPE_NAME $publishUrl  Used to store the deployment url to be triggered*/
+            $publishUrl = "";
+
+            /**
+             * This switch statement is used to identify the deployment location
+             * Options Staging | Production selected on the page content type
+             */
+            switch ($deployEnv){
+                case 'Staging':
+                    $publishUrl = $config->get('content_publisher_update_url_staging');
+                    break;
+                case 'Production':
+                    $publishUrl = $config->get('content_publisher_update_url');
+                    break;
+            }
+
+
+            /**
+             * @var TYPE_NAME $contentPublisher
+             * Uses the RestCallTrigger class to make a rest call to the defined publisher URL
+             */
+            if($publishUrl !== "") {
+                $contentPublisher = new RestCallTrigger($publishUrl);
+                $contentPublisher->triggerApiCall($node, false);
+            }
+        }
+
+    }
+
+}
+
+/**
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ */
+function len_custom_entity_predelete(Drupal\Core\Entity\EntityInterface $entity) {
+    $config = \Drupal::service('config.factory')->getEditable('len_custom.lenovocustomconfig');
+
+    $contentPublisher = new RestCallTrigger($config->get('content_publisher_delete_url'));
+    //$contentPublisher = new RestCallTrigger($restEndpointConfig);
+    //$node = $entity;
+    if ($entity->getEntityTypeId() === 'node') {
+        $node = $entity;
+        //kint($node->link($node->label()));die();
+        $contentPublisher->triggerApiCall($node, false);
+    }
+}
+
+function len_custom_entity_create(Drupal\Core\Entity\EntityInterface $entity) {
+//kint();
+    // echo "hello";
+    /* if ($entity->getEntityTypeId() === 'node') {
+       $node = $entity;
+       //kint($node->link($node->label()));die();
+       triggerApiCall($node, true);
+     }*/
+
+}
+
+
+function my_add_10_submit ($form, FormStateInterface $form_state)
+{
+    // This function updates the form values by adding 10 to each of them
+    /* foreach ($form['range'] as $key => $value) {
+       drupal_set_message("Request has been triggered to: ".$key.":".$value."<br>");
+     }*/
+    foreach($form_state->getValue('range') as $key => $value) {
+        $form_state->setValue($key['#value'],$value['#value']+10);
+    }
+    drupal_set_message(array_keys($form['range']));
+    return $form;
+}

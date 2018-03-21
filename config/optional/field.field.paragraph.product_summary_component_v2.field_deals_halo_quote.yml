@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_deals_halo_quote
+    - paragraphs.paragraphs_type.product_summary_component_v2
+id: paragraph.product_summary_component_v2.field_deals_halo_quote
+field_name: field_deals_halo_quote
+entity_type: paragraph
+bundle: product_summary_component_v2
+label: Quote
+description: 'Enter text to display in the product Halo section. If this text has been added to to a component in the secondary or tertiary view it will not show.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

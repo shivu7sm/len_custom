@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_summary_component_v2.field_accessory_cd
+    - field.field.paragraph.product_summary_component_v2.field_deals_halo_quote
+    - field.field.paragraph.product_summary_component_v2.field_deals_halo_quote_source
+    - field.field.paragraph.product_summary_component_v2.field_product_code
+    - field.field.paragraph.product_summary_component_v2.field_tech_specs
+    - paragraphs.paragraphs_type.product_summary_component_v2
+id: paragraph.product_summary_component_v2.default
+targetEntityType: paragraph
+bundle: product_summary_component_v2
+mode: default
+content:
+  field_accessory_cd:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_deals_halo_quote:
+    weight: 0
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_deals_halo_quote_source:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_product_code:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tech_specs:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
